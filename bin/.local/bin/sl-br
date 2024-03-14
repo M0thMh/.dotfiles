@@ -1,0 +1,2 @@
+#!/bin/bash
+brightnessctl  | grep -i "Current brightness" | awk '{ print $4}' | sed 's/[()]//g'

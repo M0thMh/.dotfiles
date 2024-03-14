@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+SEL="$(printf 'Power OFF \n Reboot \n Lock \n Quit' | dmenu -l 4 -p 'Choose One: ')"
+
+if [ $SEL = "Power OFF" ]; then
+    sudo poweroff;
+elif [ $SEL = "Reboot" ]; then
+    sudo reboot;
+elif [ $SEL = "Lock" ]; then
+    slock;
+elif [ $SEL = "Quit" ]; then
+    pkill dwm;
+else
+    echo "Error";
+fi
