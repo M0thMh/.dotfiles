@@ -1,0 +1,3 @@
+[submodule "dwm/.local/src/dwm"]
+	path = dwm/.local/src/dwm
+	url = git@github.com:M0thMh/dwm.git
