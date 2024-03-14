@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+alias ls="eza"
+alias ll="eza -la"
+alias v="nvim"
+alias la="eza -laHF"
+
