@@ -8,6 +8,7 @@ zstyle :compinstall filename '/home/mlx/.zshrc'
 
 autoload -Uz compinit
 compinit
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -23,4 +24,8 @@ eval "$(starship init zsh)"
 source $HOME/.config/zsh/.aliases
 source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+
+
 
